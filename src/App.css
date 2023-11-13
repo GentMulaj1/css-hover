@@ -32,6 +32,10 @@
 
 
 @media screen and (max-width: 768px) {
+  .section2, .section3 {
+    flex-direction: column;
+  }
+
   .section4 {
     width: 100%;
     flex-direction: column;
