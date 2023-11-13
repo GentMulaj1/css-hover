@@ -2,10 +2,6 @@ import React from 'react'
 import './BackgroundEffect.css'
 import styled from 'styled-components';
 
-const bg = styled.div`
-
-`
-
 const BackgroundEffect = ({ text, fullname, firstColor, secondColor}) => {
   return (
     <div className='BackgroundEffect'>
