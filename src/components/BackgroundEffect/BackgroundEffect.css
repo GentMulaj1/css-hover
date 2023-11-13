@@ -1,0 +1,92 @@
+.BackgroundEffect .box {
+    position: relative;
+    width: calc(100vw / 3 - 50px);
+    height: 40vh;
+    min-height: 320px;
+    background: #f2f2f2;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    border: 5px solid white;
+}
+
+.BackgroundEffect .box::before {
+    content: "\201C";
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 120px;
+    opacity: 0.3;
+    background: transparent;
+    pointer-events: none;
+}
+
+.BackgroundEffect .box::after {
+    content: "\201D";
+    position: absolute;
+    bottom: -10px;
+    right: 5%;
+    font-size: 120px;
+    opacity: 0.3;
+    background: transparent;
+    filter: invert(1);
+}
+
+.BackgroundEffect .box p {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+  
+.BackgroundEffect .box h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 10%;
+    right: 10%;
+    font-size: 1.5rem;
+}
+
+.BackgroundEffect .box:hover {
+    color: #f2f2f2;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+.BackgroundEffect .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5 ease-in;
+    pointer-events: none;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+}
+  
+.BackgroundEffect .box:hover,
+.BackgroundEffect .box:hover~.bg {
+    opacity: 1;
+    background: var(--firstColor);
+    background: linear-gradient(135deg, var(--firstColor) 15%,var(--secondColor) 100%);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .BackgroundEffect .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .BackgroundEffect .box {
+        width: 90%;
+    }
+}

@@ -1,0 +1,46 @@
+.GlassHover {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+    overflow: hidden;
+}
+
+
+.GlassHover img{
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+    clip-path: circle(0% at 50% 50%);
+    transition: all .5s;
+}
+
+.GlassHover:hover .content {
+    clip-path: circle(100% at 50% 50%);
+}
+
+.GlassHover:hover img{
+    filter: blur(10px);
+    transform: scale(1.1);
+}
+
+.content p {
+    margin: 15px;
+}

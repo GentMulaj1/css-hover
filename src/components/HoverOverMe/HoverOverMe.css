@@ -1,0 +1,29 @@
+.HoverOverMe {
+	background: rgba(30, 33, 36, 0.8);
+	border: 3px solid rgba(0, 0, 0, 0.4);
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	font-family: sans-serif;
+	margin: 0 10px 10px 0;
+	padding: 50px;
+	position: relative;
+	text-align: center;
+    cursor: pointer;
+}
+
+.shineHover:after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: none;
+}
+
+.shineHover:hover::after {
+	background-color: rgba(255, 255, 255, 0);
+	transition: all 0.5s ease-out;
+	width: 100%;
+}
