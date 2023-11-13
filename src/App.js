@@ -8,6 +8,27 @@ function App() {
   return (
     <div className="App">
 
+      
+        <div className="section4">
+          <BackgroundEffect
+            firstColor={"#1248c7"}
+            secondColor={"#f700ff"}
+            text={"The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself."}
+            fullname={"Mark Caine"}
+          />
+          <BackgroundEffect 
+            firstColor={"#af3fd4"}
+            text={"Your smile will give you a positive countenance that will make people feel comfortable around you."}
+            fullname={"Les Brown"}
+          />
+          <BackgroundEffect
+            firstColor={"#cca516"}
+            secondColor={"#ff002b"}
+            text={"Before anything else, preparation is the key to success."}
+            fullname={"Alexander Graham Bell"}
+          />
+        </div>
+
         <HoverOverMe />
 
         <div className="section2">
@@ -36,25 +57,6 @@ function App() {
           />
         </div>
 
-        <div className="section4">
-          <BackgroundEffect
-            firstColor={"#1248c7"}
-            secondColor={"#f700ff"}
-            text={"The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself."}
-            fullname={"Mark Caine"}
-          />
-          <BackgroundEffect 
-            firstColor={"#af3fd4"}
-            text={"Your smile will give you a positive countenance that will make people feel comfortable around you."}
-            fullname={"Les Brown"}
-          />
-          <BackgroundEffect
-            firstColor={"#cca516"}
-            secondColor={"#ff002b"}
-            text={"Before anything else, preparation is the key to success."}
-            fullname={"Alexander Graham Bell"}
-          />
-        </div>
     </div>
   );
 }
