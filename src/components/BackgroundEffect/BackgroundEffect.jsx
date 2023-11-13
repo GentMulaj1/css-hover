@@ -1,6 +1,5 @@
 import React from 'react'
 import './BackgroundEffect.css'
-import styled from 'styled-components';
 
 const BackgroundEffect = ({ text, fullname, firstColor, secondColor}) => {
   return (
